@@ -1,9 +1,9 @@
 FritzBoxCallMonitor
 ===================
 
-Simple (console) client for FritzBox's integrated CallMonitor. It executes a specified program on call-events, any available information will be appended to it as a parameter.
+Simple and lightweight console client for FritzBox's integrated CallMonitor. It executes a specified program on call-events, any available information will be appended to it as a parameter.
 
-> ### Download current version: [FritzBoxCallMonitor v1.0.0.0](https://github.com/berrnd/FritzBoxCallMonitor/releases/download/1.0.0.0/FritzBoxCallMonitor_v1.0.0.0.zip) ###
+> ### Download latest release: [FritzBoxCallMonitor v1.0.0.0](https://github.com/berrnd/FritzBoxCallMonitor/releases/download/1.0.0.0/FritzBoxCallMonitor_v1.0.0.0.zip) ###
 > ### German version: [bebsoftware.de/FritzBoxCallMonitor](http://bebsoftware.de/fritzboxcallmonitor) ###
 
 ## Quick start ##
@@ -43,7 +43,7 @@ FritzBoxCallMonitor knows the following parameters, all of them are optional:
 * `OnConnectionEnd=<PathToAnything>`
   * The program which will be executed when a connection is closed, the following parameters will be appended:
   * `Timestamp`
-  * `CONNECT` (a word, indicates the event type)
+  * `DISCONNECT` (a word, indicates the event type)
   * `ConnectionId` (a number, use this to group events to calls)
   * `DurationInSeconds` (a number, the duration of the connection in seconds)
 
