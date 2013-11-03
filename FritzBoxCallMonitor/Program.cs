@@ -15,9 +15,11 @@ namespace FritzBoxCallMonitor
         private static void Main()
         {
             Arguments = Arguments.ParseCommandline();
-            
+
+            if (Arguments.Minimize)
+                ConsoleWindowUnmanaged.Minimize();
+
             Console.Title = String.Format("FritzBoxCallMonitor on {0}", Arguments.FritzBox);
-            Console.SetBufferSize(500, 500);
 
             IPAddress fritzBoxIp = null;
             IPAddress.TryParse(Arguments.FritzBox, out fritzBoxIp);
@@ -101,6 +103,9 @@ namespace FritzBoxCallMonitor
 
         private static void Log(string message)
         {
+            if (Console.BufferWidth < message.Length)
+                Console.BufferWidth = message.Length;
+
             Console.WriteLine(String.Format("{0:yyyy-MM-dd HH:mm:ss}\t{1}", DateTime.Now, message));
         }
     }

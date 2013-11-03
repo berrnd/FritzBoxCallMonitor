@@ -15,6 +15,8 @@ namespace FritzBoxCallMonitor
         public string OnConnected { get; private set; }
         public string OnConnectionEnd { get; private set; }
 
+        public bool Minimize { get; private set; }
+
         public static Arguments ParseCommandline()
         {
             Arguments parsed = new Arguments();
@@ -42,6 +44,17 @@ namespace FritzBoxCallMonitor
                             break;
                         case "fritzbox":
                             parsed.FritzBox = value;
+                            break;
+                    }
+                }
+                else if (item.StartsWith("--"))
+                {
+                    string param = item.Substring(2, item.Length - 2).ToLower();
+
+                    switch (param)
+                    {
+                        case "minimize":
+                            parsed.Minimize = true;
                             break;
                     }
                 }
