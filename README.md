@@ -50,10 +50,10 @@ FritzBoxCallMonitor knows the following parameters, all of them are optional:
 Or simply look into `Start.bat` in the `Examples` directory for an example call.
 
 ## Screenshots ##
-![](http://files.bebcloud.de/public/2013/FritzBoxCallMonitorScreenshotMain.png)
-![](http://files.bebcloud.de/public/2013/FritzBoxCallMonitorScreenshotEventExample.png)
+![](https://files.bebcloud.de/public/2013/FritzBoxCallMonitorScreenshotMain.png)
+![](https://files.bebcloud.de/public/2013/FritzBoxCallMonitorScreenshotEventExample.png)
 
 ## License ##
 The MIT License (MIT)
 
-![](http://piwik.bebcloud.de/piwik.php?idsite=12&rec=1&action_name=FritzBoxCallMonitor)
+![](https://piwik.bebcloud.de/piwik.php?idsite=12&rec=1&action_name=FritzBoxCallMonitor)
