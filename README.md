@@ -4,7 +4,6 @@ FritzBoxCallMonitor
 Simple and lightweight console client for FritzBox's integrated CallMonitor. It executes a specified program on call-events, any available information will be appended to it as a parameter.
 
 > ### Download latest release: [FritzBoxCallMonitor v1.1.0.0](https://github.com/berrnd/FritzBoxCallMonitor/releases/latest) ###
-> ### German version: [bebsoftware.de/FritzBoxCallMonitor](http://bebsoftware.de/fritzboxcallmonitor) ###
 
 ## Quick start ##
 > Note: If you haven't yet, you first need to enable the CallMonitor in your FritzBox by "calling" `#96*5*` from any connected phone.
