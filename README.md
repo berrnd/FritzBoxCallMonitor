@@ -52,5 +52,9 @@ Or simply look into `Start.bat` in the `Examples` directory for an example call.
 ![](doc-screenshots/main.png)
 ![](doc-screenshots/event-example.png)
 
+## Links / Usage Examples ##
+https://codeberg.org/cweiske/fritzbox-pegamed  
+FritzBox-zu-PegaMed - Meldet eingehende Anrufer einer Fritzbox an die PegaMed-Software
+
 ## License ##
 The MIT License (MIT)
